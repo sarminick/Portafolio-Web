@@ -1,3 +1,5 @@
+@import "tailwindcss";
+
 :root {
   --text: #6b6375;
   --text-h: #08060d;
@@ -108,4 +110,12 @@ code {
   line-height: 135%;
   padding: 4px 8px;
   background: var(--code-bg);
+}
+
+
+/* Custom design system utility classes tailwind */
+@layer utilities {
+  .glass-navbar {
+    @apply bg-slate-950/70 backdrop-blur-md border-b border-slate-900/80;
+  }
 }
