@@ -78,7 +78,7 @@ export default function Navbar() {
                 
             </div>
             {/* Mobile Drawer menu */}
-            <div className={`md:hidden fixed inset-x-0 top-[60px] bg-slate-950/95 backdrop-blur-lg border-b border-slate-950/20 shadow-2xl transition-all duration-300 ease-in-out ${isOpen ? 'opacity-100 translate-y-0 pointer-events-auto' : 'opacity-0 -translate-y-4 pointer-events-none'}`}>
+            <div className={`md:hidden fixed inset-x-0 top-[60px] bg-slate-950/95 backdrop-blur-lg border-b border-slate-950/20 shadow-2xl transition-all duration-300 ease-in-out ${isOpen ? 'opacity-100 translate-y-0 pointer-events-auto' : 'opacity-0 -Ntranslate-y-4 pointer-events-none'}`}>
                 <div className="px-2 pt-2 pb-4 space-y-1 sm:px-3">
                     {navLinks.map((link) => (
                         <a

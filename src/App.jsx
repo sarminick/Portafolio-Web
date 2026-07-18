@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import Navbar from './assets/components/Navbar'
-
+import Hero from './assets/components/Hero'
 import reactLogo from './assets/react.svg'
 import viteLogo from './assets/vite.svg'
 import heroImg from './assets/hero.png'
@@ -13,6 +13,7 @@ function App() {
   return (
     <>
       <Navbar />
+      <Hero />
       <section id="center">
         <div className="hero">
           <img src={heroImg} className="base" width="170" height="179" alt="" />
