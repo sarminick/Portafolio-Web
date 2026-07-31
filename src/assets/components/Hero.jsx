@@ -38,17 +38,22 @@ export default function Hero() {
 
                         {/* CTAs */}
                         <div className="flex flex-wrap items-center justify-center lg:justify-start gap-4 pt-4">
-                            <a href="#proyectos" className="group inline-flex items-center gap-2 bg-indigo-600 hover:bg-indigo-500 text-white font-semibold px-6 py-3 rounded-xl transition-all shadow-lg shadow-indigo-600/20 hover:shadow-indigo-600/30 hover:-translate-y-0.5">
+                            <a 
+                                href="#proyectos" 
+                                className="group inline-flex items-center gap-2 bg-indigo-600 hover:bg-indigo-500 text-white font-semibold px-6 py-3 rounded-xl transition-all shadow-lg shadow-indigo-600/20 hover:shadow-indigo-600/30 hover:-translate-y-0.5">
                                 Ver proyectos
                                 <ArrowRightIcon size={18} className="group-hover:translate-x-1 transition-transform" />
                             </a>
                             
-                            <button>
+                            <button className="cursor-pointer inline-flex items-center gap-2 bg-slate-900 border border-slate-800 hover:border-slate-700 text-slate-200 hover:text-white font-semibold px-6 py-3 rounded-xl transition-all hover:-translate-y-0.5">
                                 Descargar CV
                                 <Download size={18} />
                             </button>
 
-                            <a href="#contacto">
+                            <a 
+                                href="#contacto"
+                                className="inline-flex items-center gap-2 bg-transparent border border-indigo-500/30 hover:border-indigo-500/60 hover:bg-indigo-500/5 text-indigo-400 hover:text-indigo-300 font-semibold px-6 py-3 rounded-xl transition-all hover:-translate-y-0.5"
+                            >
                                 Contactarme
                                 <Mail size={18} />
                             </a>
@@ -56,25 +61,19 @@ export default function Hero() {
                     </div>
 
                     {/* Photo / Avatar */}
-                    <div>
-                        <div>
-                            {/* Glowing Backgroud Ring */}
-                            <div></div>
+                    <div className="flex-1 flex justify-center lg:justify-end animate-fade-in animate-delay-200">
+                        <div className="relative group">
+                            {/* Glowing Background Ring */}
+                            <div className="absolute -inset-1 bg-gradient-to-r from-indigo-500 via-purple-500 to-emerald-500 rounded-3xl blur opacity-30 group-hover:opacity-50 transition duration-1000 group-hover:duration-200"></div>
 
                             {/* Image Container */}
-                            <div>
-                                <img />
-                            </div>
-
-                            {/* Float Card Overlay */}
-                            <div>
-                                <div>
-
-                                </div>
-                                <div>
-                                    <p>Especialidad</p>
-                                    <p>Full Stack Dev</p>
-                                </div>
+                            <div className="relative w-72 h-72 sm:w-80 sm:h-80 lg:w-96 lg:h-96 rounded-3xl overflow-hidden border border-slate-800 bg-slate-900">
+                                <img 
+                                    src="/public/images/FotoPerfil.jpeg"
+                                    alt="Diego Sarmiento"
+                                    className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                                    loading="eager"
+                                />
                             </div>
                         </div>
                     </div>
